@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <!-- Navbar -->
+  <nav>
+    <h1>Abhishek G B</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../ABHISHEK G B .pdf" download="Abhishek_Resume.pdf">Download Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h2>Welcome to My Portfolio</h2>
+    <p>Computer Science Engineer | Full Stack Developer | UI Developer </p>
+    <button onclick="scrollToSection('contact')">Contact Me</button>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Abhishek, a Computer Science Engineering student at Sapthagiri College of Engineering, combining
+      creativity with technology to develop impactful, user-friendly solutions. With a solid foundation in Python, SQL,
+      HTML, CSS, JavaScript, and ReactJS, and a CGPA of 7.5, I’m passionate about building projects that simplify and
+      enhance user interactions. My recent work includes an e-commerce platform designed for seamless shopping
+      experiences and a cafe management system to optimize operations.
+      Through these projects, I’ve sharpened my teamwork and leadership skills. Fluent in English and Kannada, I connect
+      well with diverse teams. Feel free to check out my GitHub to explore my projects, or reach out
+      gbahishek6361@gmail.com love to collaborate!</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">Python</div>
+      <div class="skill-item">SQL</div>
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">ReactJS</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-item">
+        <h3><a href="#" target="_blank">E-commerce Platform</a></h3>
+        <p>A platform that enables users to browse and purchase products online.</p>
+      </div>
+      <div class="project-item">
+        <h3><a href="#" target="_blank">Cafe Management System</a></h3>
+        <p>A system to manage orders, inventory, and billing for cafes.</p>
+      </div>
+      <div class="project-item">
+        <h3><a href="#" target="_blank">Meal Finder</a></h3>
+        <p>Lets users search meals and view recipes via an interactive API-powered interface.</p>
+      </div>
+      <div class="project-item">
+        <h3><a href="#" target="_blank">Shopping website</a></h3>
+        <p>A shopping website allows users to browse products, add them to a cart, and make purchases online.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+ <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for any collaboration or opportunities.</p>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+</section>
+
+  <script src="./script.js">  </script>
+</body>
+
+</html>
